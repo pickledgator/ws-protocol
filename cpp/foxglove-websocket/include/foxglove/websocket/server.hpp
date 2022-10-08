@@ -105,6 +105,10 @@ private:
     std::unordered_map<SubscriptionId, ChannelId> subscriptions;
     std::unordered_map<ChannelId, std::unordered_set<SubscriptionId>> subscriptionsByChannel;
 
+    ClientInfo(const std::string& _name, const ConnHandle& _handle)
+        : name{_name}
+        , handle{_handle} {}
+
     ClientInfo(const ClientInfo&) = delete;
     ClientInfo& operator=(const ClientInfo&) = delete;
 
