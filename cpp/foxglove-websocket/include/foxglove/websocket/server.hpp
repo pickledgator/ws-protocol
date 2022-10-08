@@ -1,12 +1,12 @@
 #pragma once
 
-#include <nlohmann/json.hpp>
 #include <websocketpp/config/asio_no_tls.hpp>
 #include <websocketpp/server.hpp>
 
 #include <algorithm>
 #include <cstdint>
 #include <functional>
+#include <json.hpp>
 #include <map>
 #include <memory>
 #include <string_view>
